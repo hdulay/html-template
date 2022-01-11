@@ -13,6 +13,7 @@
       {{ "template/css/asyncapi.min.css" | includeFile | safe }}
     </style>
   {% else %}
+    <link href="dm/css/dm.css" rel="stylesheet">
     <link href="css/global.min.css" rel="stylesheet">
     <link href="css/asyncapi.min.css" rel="stylesheet">
   {% endif %}
@@ -34,5 +35,8 @@
       var config = {{ params | stringifyConfiguration | safe }};
       AsyncApiStandalone.hydrate({ schema, config }, document.getElementById("root"));
     </script>
-  </body>
+
+    <!-- Data Mesh Customizations -->
+    <script type="text/javascript" src="dm/js/grant.js"></script>
+      </body>
 </html>
