@@ -1,0 +1,10 @@
+.dm .btn {
+    color:#050; 
+    font: old 84% 'trebuchet ms',helvetica,sans-serif; 
+    background-color:#fed; 
+    border:1px solid; 
+    border-color: #696 #363 #363 #696; 
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
